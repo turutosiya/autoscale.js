@@ -27,12 +27,12 @@
 			var scale  = (scalew < scaleh)       ? scalew : scaleh;
 			// apply scale
 			return this.css({
-				"transform"                : "scale(" + scale + ")",
-				"transform-origin"         : "center middle",
-				"-webkit-transform"        : "scale(" + scale + ")",
-				"-webkit-transform-origin" : "center middle",
-				"-moz-transform"           : "scale(" + scale + ")",
-				"-moz-transform-origin"    : "center middle"
+				"transform"                : 'scale(' + scale + ', ' + scale + ')',
+				"transform-origin"         : 'center middle',
+				"-webkit-transform"        : 'scale(' + scale + ', ' + scale + ')',
+				"-webkit-transform-origin" : 'center middle',
+				"-ms-transform"            : 'scale(' + scale + ', ' + scale + ')',
+				"-ms-transform-origin"     : 'center middle',
 			});
 		}
 	});
